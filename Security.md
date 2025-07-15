@@ -5,7 +5,7 @@
 ### **1. WebSecurityConfig.java (Configuración central de seguridad)**
 **Propósito**: Configuración principal de Spring Security que define políticas de acceso, autenticación y filtros.
 
-**Análisis detallado**:
+**Código**:
 ```java
 @Configuration
 @EnableWebSecurity
@@ -56,7 +56,7 @@ public class WebSecurityConfig {
 }
 ```
 
-**Explicación técnica**:
+**Explicación**:
 1. **Deshabilitación de CSRF**: Necesario para APIs REST donde no hay sesiones tradicionales.
 2. **Autorización por rutas**:
    - Rutas públicas: login, autenticación JWT y recursos estáticos
