@@ -50,6 +50,7 @@ Aquí tienes 6 procesos clave del proyecto con sus clases relevantes y ubicació
 - **Proceso**:  
   - Generar token JWT al validar credenciales  
   - Filtro verifica token en cada petición protegida  
+  - Solo pasa el DNI
 
 ---
 
