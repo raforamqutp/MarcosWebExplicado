@@ -180,7 +180,7 @@ Integración de Spring Security para manejar autenticación/autorización, con p
     ```
 
 **Dominio demostrado**:  
-Uso de la librería `jjwt` para tokens JWT, con validación de firma y extracción de claims. El filtro se integra en la cadena de seguridad de Spring para proteger endpoints REST. La ausencia de manejo de expiración (mejora sugerida) muestra comprensión de limitaciones actuales.
+Uso de tokens JWT, con validación de firma y extracción de claims. El filtro se integra en la cadena de seguridad de Spring para proteger endpoints REST. La ausencia de manejo de expiración (mejora sugerida) muestra comprensión de limitaciones actuales.
 
 ---
 
