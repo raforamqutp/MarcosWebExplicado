@@ -75,17 +75,13 @@ graph LR
     E[Registro Empleados] --> F[Autenticación JWT]
 ```
 
-¿Necesitas detalles adicionales de algún proceso en particular? Por ejemplo:  
-- *"¿Cómo se implementa exactamente la validación de DNI único en el CRUD de clientes?"*  
-- *"¿Qué lógica falta para manejar la expiración de membresías?"*
-
 
 ---
 ---
-
-Aquí tienes un análisis estructurado que demuestra el dominio técnico del proyecto, destacando las implementaciones clave según los requisitos solicitados:
-
 ---
+
+
+
 
 ### **1. Acceso a Base de Datos con Entity y JPA Repository**
 **Implementación**:  
@@ -209,19 +205,7 @@ sequenceDiagram
     App-->>Client: 200 + Data
 ```
 
-**Conclusión técnica**:  
-El proyecto implementa:  
-1. **Capa de datos** con JPA/Hibernate para ORM y Spring Data JPA para repositorios.  
-2. **Seguridad** mediante Spring Security, con autenticación basada en roles y estado de cuentas.  
-3. **JWT** para autenticación stateless, integrado en el flujo HTTP mediante filtros.  
-
-**Puntos fuertes**:  
-- Uso correcto de anotaciones JPA para modelado de datos.  
-- Doble estrategia de autenticación (formulario + JWT).  
-- Centralización de reglas de seguridad en `WebSecurityConfig`.  
 
 **Áreas de mejora**:  
 - Validación de expiración de tokens en `JwtUtil`.  
 - Uso de `@PreAuthorize` para control granular en métodos.  
-
-¿Necesitas profundizar en algún componente específico?
